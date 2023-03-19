@@ -32,10 +32,21 @@ extension MainViewController {
             let decoder = JSONDecoder()
             
             do {
-                let ramInfo = try decoder.decode(rickAndMortyInfo.self, from: data)
-                print(ramInfo)
+                
+                let ramInfo = try decoder.decode(RickAndMortyInfo.self, from: data)
+                for character in ramInfo.results {
+                    print("""
+name: \(character.name)
+species: \(character.species)
+gender: \(character.gender)
+location: \(character.location.name)
+
+""")
+                }
+//                print(ramInfo.results)
+                
             } catch let error {
-                print(error)
+                print(error.localizedDescription)
             }
         }.resume()
     }
