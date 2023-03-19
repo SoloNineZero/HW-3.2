@@ -29,7 +29,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -37,9 +37,9 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="09C-Cz-TUd">
-                                <rect key="frame" x="20" y="67" width="335" height="100"/>
+                                <rect key="frame" x="20" y="231" width="335" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="DVQ-Iq-ybY"/>
+                                    <constraint firstAttribute="height" constant="150" id="DVQ-Iq-ybY"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -47,11 +47,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KE0-iM-KGY" secondAttribute="bottom" constant="50" id="5oW-Xo-ZNx"/>
-                            <constraint firstItem="09C-Cz-TUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9cP-dm-4z5"/>
                             <constraint firstItem="KE0-iM-KGY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9px-xy-3Tu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KE0-iM-KGY" secondAttribute="trailing" constant="20" id="DJ7-Bx-qwx"/>
-                            <constraint firstItem="09C-Cz-TUd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fkC-C4-CeB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="09C-Cz-TUd" secondAttribute="trailing" constant="20" id="yct-aU-QyO"/>
+                            <constraint firstItem="09C-Cz-TUd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="E6U-TD-tX3"/>
+                            <constraint firstItem="09C-Cz-TUd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="aE6-Mb-VWl"/>
+                            <constraint firstAttribute="trailing" secondItem="09C-Cz-TUd" secondAttribute="trailing" constant="20" id="khg-Ix-M1j"/>
                         </constraints>
                     </view>
                 </viewController>

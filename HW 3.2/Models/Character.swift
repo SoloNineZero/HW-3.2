@@ -7,17 +7,19 @@
 
 import Foundation
 
-struct Course: Decodable {
+struct Character: Decodable {
     let name: String
     let species: String
     let gender: String
-    let origin: Origin
+    let location: Location
+    let image: String
 }
 
-struct Origin: Decodable {
+struct Location: Decodable {
     let name: String
+    let url: String
 }
 
-struct SwiftBookInfo: Decodable {
-    let results: [Course]
+struct rickAndMortyInfo: Decodable {
+    let results: [Character]
 }

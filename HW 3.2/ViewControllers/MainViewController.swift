@@ -9,11 +9,10 @@ import UIKit
 
 final class MainViewController: UIViewController {
   
-    enum Link: String {
-        case coursesURL = "https://rickandmortyapi.com/api/character"
-    }
+    let apiURL = "https://rickandmortyapi.com/api/character"
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
+        sender.pulsate()
         fetchCourses()
     }
     
@@ -22,9 +21,9 @@ final class MainViewController: UIViewController {
 // MARK: - Networking
 extension MainViewController {
     private func fetchCourses() {
-        guard let url = URL(string: Link.coursesURL.rawValue) else { return }
+        guard let url = URL(string: apiURL) else { return }
                 
-        URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
+        URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data else {
                 print(error?.localizedDescription ?? "No error description")
                 return
@@ -33,8 +32,8 @@ extension MainViewController {
             let decoder = JSONDecoder()
             
             do {
-                let sbInfo = try decoder.decode(SwiftBookInfo.self, from: data)
-                print(sbInfo)
+                let ramInfo = try decoder.decode(rickAndMortyInfo.self, from: data)
+                print(ramInfo)
             } catch let error {
                 print(error)
             }
