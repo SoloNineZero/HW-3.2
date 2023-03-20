@@ -13,7 +13,7 @@ enum Link: String {
 }
 
 final class MainViewController: UIViewController {
-    
+    // MARK: - IB Action
     @IBAction func starshipButtonPressed(_ sender: UIButton) {
         sender.pulsate()
         fetchStarship()
@@ -23,8 +23,6 @@ final class MainViewController: UIViewController {
         sender.pulsate()
         fetchPerson()
     }
-    
-    
 }
 
 // MARK: - Networking
