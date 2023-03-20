@@ -14,16 +14,22 @@ enum Link: String {
 
 final class MainViewController: UIViewController {
     
-    @IBAction func startButtonPressed(_ sender: UIButton) {
+    @IBAction func starshipButtonPressed(_ sender: UIButton) {
         sender.pulsate()
         fetchStarship()
     }
+    
+    @IBAction func personButtonPressed(_ sender: UIButton) {
+        sender.pulsate()
+        fetchPerson()
+    }
+    
     
 }
 
 // MARK: - Networking
 extension MainViewController {
-    private func fetchCharacter() {
+    private func fetchPerson() {
         guard let url = URL(string: Link.apiPeopleURL.rawValue) else { return }
                 
         URLSession.shared.dataTask(with: url) { data, _, error in
