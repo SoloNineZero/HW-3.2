@@ -15,21 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2294143541-RAMMobileHero" translatesAutoresizingMaskIntoConstraints="NO" id="y11-Ac-6K9" userLabel="launch">
-                                <rect key="frame" x="20" y="238.66666666666663" width="335" height="335"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="y11-Ac-6K9" secondAttribute="height" multiplier="1:1" id="tJ9-9u-qYe"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dwqq" translatesAutoresizingMaskIntoConstraints="NO" id="y11-Ac-6K9" userLabel="launch">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="y11-Ac-6K9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0JX-jn-ccg"/>
-                            <constraint firstAttribute="trailing" secondItem="y11-Ac-6K9" secondAttribute="trailing" constant="20" id="TEU-t0-92F"/>
-                            <constraint firstItem="y11-Ac-6K9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Yye-dS-BgX"/>
-                            <constraint firstItem="y11-Ac-6K9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="d0K-Bu-cIY"/>
-                            <constraint firstItem="y11-Ac-6K9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kpV-Uj-wNR"/>
+                            <constraint firstItem="y11-Ac-6K9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4kH-ct-Dle"/>
+                            <constraint firstItem="y11-Ac-6K9" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="gRq-pb-epL"/>
+                            <constraint firstAttribute="bottom" secondItem="y11-Ac-6K9" secondAttribute="bottom" id="mXm-Ye-dJ4"/>
+                            <constraint firstItem="y11-Ac-6K9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rOB-2f-lTS"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2294143541-RAMMobileHero" width="980" height="670"/>
+        <image name="dwqq" width="287" height="601"/>
     </resources>
 </document>
