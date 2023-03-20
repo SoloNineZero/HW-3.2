@@ -15,6 +15,7 @@
 		A8436B2829C79B7A007D8F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8436B2629C79B7A007D8F8C /* LaunchScreen.storyboard */; };
 		A8436B3429C7A2CE007D8F8C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8436B3329C7A2CE007D8F8C /* Character.swift */; };
 		A8436B3729C7B6B7007D8F8C /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8436B3629C7B6B7007D8F8C /* Extension + UIButton.swift */; };
+		A8630C5629C8429100F7CBC7 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8630C5529C8429100F7CBC7 /* Starship.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A8436B2929C79B7A007D8F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8436B3329C7A2CE007D8F8C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		A8436B3629C7B6B7007D8F8C /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
+		A8630C5529C8429100F7CBC7 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A8436B3329C7A2CE007D8F8C /* Character.swift */,
+				A8630C5529C8429100F7CBC7 /* Starship.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				A8436B3429C7A2CE007D8F8C /* Character.swift in Sources */,
 				A8436B3729C7B6B7007D8F8C /* Extension + UIButton.swift in Sources */,
 				A8436B2029C79B78007D8F8C /* MainViewController.swift in Sources */,
+				A8630C5629C8429100F7CBC7 /* Starship.swift in Sources */,
 				A8436B1C29C79B78007D8F8C /* AppDelegate.swift in Sources */,
 				A8436B1E29C79B78007D8F8C /* SceneDelegate.swift in Sources */,
 			);
