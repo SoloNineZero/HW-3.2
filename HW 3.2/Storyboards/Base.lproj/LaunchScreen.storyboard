@@ -15,14 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dwqq" translatesAutoresizingMaskIntoConstraints="NO" id="y11-Ac-6K9" userLabel="launch">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="y11-Ac-6K9" userLabel="launch">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_clear_background" translatesAutoresizingMaskIntoConstraints="NO" id="KDs-LQ-nQP">
+                                <rect key="frame" x="0.0" y="147" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Zbe-bI-BSv"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="KDs-LQ-nQP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3fI-mD-43r"/>
                             <constraint firstItem="y11-Ac-6K9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4kH-ct-Dle"/>
+                            <constraint firstItem="KDs-LQ-nQP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FYr-BN-64P"/>
+                            <constraint firstItem="KDs-LQ-nQP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="RO9-ai-NPd"/>
                             <constraint firstItem="y11-Ac-6K9" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="gRq-pb-epL"/>
                             <constraint firstAttribute="bottom" secondItem="y11-Ac-6K9" secondAttribute="bottom" id="mXm-Ye-dJ4"/>
                             <constraint firstItem="y11-Ac-6K9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rOB-2f-lTS"/>
@@ -35,6 +44,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dwqq" width="287" height="601"/>
+        <image name="background" width="287" height="601"/>
+        <image name="logo_clear_background" width="1024" height="1024"/>
     </resources>
 </document>
