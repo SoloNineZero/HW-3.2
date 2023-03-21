@@ -3,7 +3,7 @@
 //  HW 3.2
 //
 //  Created by Игорь Солодянкин on 20.03.2023.
-// 
+//
 
 import UIKit
 
@@ -13,7 +13,7 @@ enum Link: String {
 }
 
 final class MainViewController: UIViewController {
-    // MARK: - IB Action
+    
     @IBAction func starshipButtonPressed(_ sender: UIButton) {
         sender.pulsate()
         fetchStarship()
@@ -23,6 +23,8 @@ final class MainViewController: UIViewController {
         sender.pulsate()
         fetchPerson()
     }
+    
+    
 }
 
 // MARK: - Networking
@@ -43,14 +45,14 @@ extension MainViewController {
                 let swInfo = try decoder.decode(StarWarsCharactersInfo.self, from: data)
                 for character in swInfo.results {
                     print("""
-name: \(character.name)
-height: \(character.height)
-mass: \(character.mass)
-hair color: \(character.hair_color)
-eye color: \(character.eye_color)
-gender: \(character.gender)
+                        name: \(character.name)
+                        height: \(character.height)
+                        mass: \(character.mass)
+                        hair color: \(character.hair_color)
+                        eye color: \(character.eye_color)
+                        gender: \(character.gender)
 
-""")
+                        """)
                 }
                 
             } catch let error {
@@ -76,12 +78,12 @@ gender: \(character.gender)
                 for starship in swInfo.results {
                     
                     print("""
-name: \(starship.name)
-model: \(starship.model)
-manufacturer: \(starship.manufacturer)
-cost in credits: \(starship.cost_in_credits)
+                        name: \(starship.name)
+                        model: \(starship.model)
+                        manufacturer: \(starship.manufacturer)
+                        cost in credits: \(starship.cost_in_credits)
 
-""")
+                        """)
                 }
                 
             } catch let error {
