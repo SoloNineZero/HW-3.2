@@ -43,14 +43,14 @@ extension MainViewController {
                 let swInfo = try decoder.decode(StarWarsCharactersInfo.self, from: data)
                 for character in swInfo.results {
                     print("""
-name: \(character.name)
-height: \(character.height)
-mass: \(character.mass)
-hair color: \(character.hair_color)
-eye color: \(character.eye_color)
-gender: \(character.gender)
+                        name: \(character.name)
+                        height: \(character.height)
+                        mass: \(character.mass)
+                        hair color: \(character.hair_color)
+                        eye color: \(character.eye_color)
+                        gender: \(character.gender)
 
-""")
+                        """)
                 }
                 
             } catch let error {
